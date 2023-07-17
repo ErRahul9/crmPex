@@ -78,7 +78,7 @@ class main():
         with open("../data/tmp.json", 'w') as file:
             json.dump(data,file)
         retArr = {}
-        with open("/data/tmp.json") as jfile:
+        with open("../data/tmp.json") as jfile:
             json_data = jfile.read()
             data = json.loads(json_data)
             for key, value in data.get("data_source_counts").items():
@@ -111,7 +111,7 @@ class main():
         merged_df["List Issue Types"] = ''
         merged_df["notes"] = ''
         print(merged_df)
-        merged_df.to_excel('../../data/output.xlsx', index=False)
+        merged_df.to_excel('../data/output.xlsx', index=False)
 
     # def addComments(self,row):
     #     if pd.isnull(row['household_count']):
