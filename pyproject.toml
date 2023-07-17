@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "main"
+description = ""
+authors = ["Rahul"]
+readme = "README.md"
+version = "0.1.0"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "^1.26.143"
+python-dotenv = "^1.0.0"
+psycopg2 = "^2.9.6"
+pandas = "^2.0.3"
+gspread = "^5.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
